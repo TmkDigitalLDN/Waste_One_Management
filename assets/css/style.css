@@ -149,18 +149,6 @@ select {
   }
 }
 
-@media only screen (min-width: 368px) and (max-width: 768px) {
-  .container-area{
-    max-width: 1600px;
-    margin: 0 auto;
-    display: flex;
-    padding: 50px;
-    justify-content: space-around;
-    justify-items: center;
-  }
-
-
-}
 @media (min-width: 768px) and (max-width: 1200px){
 
 .area-logo{
@@ -1076,6 +1064,7 @@ width: 300px;
 .bg-img {
   position: relative;
   z-index: 1;
+  object-fit: cover;
 }
 
 .background-size-auto {
@@ -1128,7 +1117,7 @@ h6 {
   color: #1b1a1a;
   font-family: "Rubik", sans-serif;
   text-transform: capitalize;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -1174,7 +1163,7 @@ h6 {
 
 .heading__title {
   font-size: 34px;
-  line-height: 1;
+  margin-left: 10px;
   margin-bottom: 17px;
 }
 
@@ -1223,7 +1212,7 @@ h6 {
 }
 
 .text-block__desc {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
 }
 
@@ -1281,6 +1270,7 @@ h6 {
   .heading-layout2 .heading__title {
     font-size: 25px;
     margin-top: 20px;
+    max-width: 300px;
   }
   .heading-layout3 .heading__title {
     font-size: 30px;
@@ -1292,7 +1282,6 @@ h6 {
   }
   .text-block__desc {
     font-size: 18px;
-    line-height: 24px;
     margin: 15px;
     margin-bottom: 10px;
   }
@@ -2407,6 +2396,7 @@ textarea.form-control {
   left: 0;
   width: 23px;
   height: 2px;
+  font-size: 22px;
   background-color: #222222;
 }
 
@@ -2937,6 +2927,13 @@ textarea.form-control {
   .header-layout1 .action-btn__request,
   .header-layout2 .action-btn__request {
     min-width: 240px;
+    font-size: 20px;
+  }
+  .phone_icon{
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    object-fit: cover;
   }
   .header-layout2 .navbar .navbar-brand {
     padding-right: 30px;
@@ -2968,7 +2965,7 @@ textarea.form-control {
   .header-layout2 .navbar .action-btn__request {
     min-width: 170px;
     height: 100px;
-    font-size: 13px;
+    font-size: 20px;
    
     padding: 0 4px;
   }
@@ -2982,6 +2979,7 @@ textarea.form-control {
   .navbar .navbar-toggler {
     position: absolute;
     right: 15px;
+    font-size: 22px;;
     margin-top: 20px;
     height: 40px;
   }
@@ -3307,14 +3305,19 @@ textarea.form-control {
     font-size: 20px;
     font-weight: 400;
   }
+
+  .btn__white_{
+width: 20px;
+margin-left: 100px;
+  }
 }
 
 @media (max-width: 450px) {
   .action-btn__request {
-    display: none;
+   width: 50px;
   }
   .navbar-brand img {
-    max-width: 110px;
+    max-width: 200px;
   }
   .action-btn__search {
     padding: 0;
@@ -3758,11 +3761,7 @@ textarea.form-control {
 }
 
 .slider .slide-item__subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 3px;
+  display: none;
 }
 
 .slider .slide-item__title {
@@ -3957,13 +3956,11 @@ textarea.form-control {
 /* Extra Small Devices */
 @media (min-width: 320px) and (max-width: 575px) {
   .slider .slide-item__title {
-    font-size: 30px;
+    font-size: 55px;
     margin-bottom: 10px;
   }
   .slider .slide-item__desc {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 20px;
+    display: none;
   }
   .slider .btn {
     margin-bottom: 10px;
@@ -3980,6 +3977,14 @@ textarea.form-control {
   .slider .slick-arrow.slick-next {
     right: -10px;
   }
+
+  .services-layout2{
+    display: none;
+  }
+
+  
+  
+
 }
 
 /*--------------------------
@@ -4369,6 +4374,7 @@ textarea.form-control {
 .portfolio-item .portfolio-item__img {
   position: relative;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .portfolio-item .portfolio-item__img img {
@@ -4637,6 +4643,7 @@ textarea.form-control {
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -6287,6 +6294,7 @@ textarea.form-control {
 --------------------------*/
 .counter-item {
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .counter-item .counter {
