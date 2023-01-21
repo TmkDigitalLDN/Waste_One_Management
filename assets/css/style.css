@@ -2985,6 +2985,7 @@ textarea.form-control {
   }
   .navbar .collapse:not(.show) {
     display: block;
+    height: 100vh;
   }
   .navbar .navbar-nav {
     margin: 0 !important;
